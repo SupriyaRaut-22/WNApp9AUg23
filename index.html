@@ -19,6 +19,7 @@
 			{
 				alert("Number should not be Empty");
 				name.value="";
+				ans.innerHTML="";
 				name.focus();
 				return;
 			}
@@ -27,14 +28,16 @@
   			{
 				alert("Name Should not have Empty Spaces ");
 				name.value="";
+				ans.innerHTML="";
 				name.focus();
 				return;
 			}
 
 			if(!name.value.match(/^[A-Za-z ]+$/))
 			{
-				alert("Name Should onlyhave Alphabets ");
+				alert("Name Should only have Alphabets ");
 				name.value="";
+				ans.innerHTML="";
 				name.focus();
 				return;
 			}
